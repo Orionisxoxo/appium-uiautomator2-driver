@@ -12,5 +12,44 @@ drivers:
     mainClass: AndroidUiautomator2Driver
     scripts:
       reset: scripts/reset.js
+  espresso:
+    pkgName: appium-espresso-driver
+    version: 2.22.0
+    installType: npm
+    installSpec: espresso
+    installPath: C:\Users\iwona\.appium\node_modules\appium-espresso-driver
+    appiumVersion: ^2.0.0-beta.40
+    automationName: Espresso
+    platformNames:
+      - Android
+    mainClass: EspressoDriver
+    scripts:
+      print-espresso-path: ./scripts/print-espresso-path.js
+      build-espresso: ./scripts/build-espresso.js
+  flutter:
+    pkgName: appium-flutter-driver
+    version: 1.14.4
+    installType: npm
+    installSpec: appium-flutter-driver
+    installPath: C:\Users\iwona\.appium\node_modules\appium-flutter-driver
+    appiumVersion: ^2.0.0-beta.40
+    automationName: Flutter
+    platformNames:
+      - iOS
+      - Android
+    mainClass: FlutterDriver
+  chromium:
+    pkgName: appium-chromium-driver
+    version: 1.1.55
+    installType: npm
+    installSpec: chromium
+    installPath: C:\Users\iwona\.appium\node_modules\appium-chromium-driver
+    appiumVersion: ^2.0.0
+    automationName: Chromium
+    platformNames:
+      - Windows
+      - macOS
+      - Linux
+    mainClass: ChromiumDriver
 plugins: {}
 schemaRev: 4
